@@ -5,11 +5,13 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Amar Bazar"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Projeccx">
-        <activity android:name=".RegisterSeller"></activity>
+        <activity android:name=".Homepage1"></activity>
+        <activity android:name=".Homepage" />
+        <activity android:name=".RegisterSeller" />
         <activity android:name=".RegisterBuyer" />
         <activity android:name=".LoginSeller" />
         <activity android:name=".LoginBuyer" />

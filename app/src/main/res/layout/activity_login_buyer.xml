@@ -4,49 +4,125 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
+    android:background="@color/purple_200"
     tools:context=".LoginBuyer">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Email"
-        android:id="@+id/email"
-        android:layout_marginTop="100dp"/>
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-    <EditText
+        <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:id="@+id/password"
-        android:layout_below="@id/email"
-        android:layout_marginTop="100dp"/>
+        android:layout_height="wrap_content">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:id="@+id/login"
-        android:layout_below="@id/password"
-        android:layout_marginTop="50dp"/>
+            <View
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="0dp"
+                android:background="#5000CA" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Not registered yet?"
-        android:id="@+id/noreg"
-        android:layout_below="@id/login"
-        android:gravity="center"
-        android:layout_marginTop="50dp"
-        android:textStyle="bold"
-        android:textSize="20dp"/>
+            <View
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/tv1"
+                android:layout_marginTop="-38.5dp"
+                android:background="@drawable/ic_wave" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Register"
-        android:id="@+id/register"
-        android:layout_below="@id/noreg"
-        android:layout_marginTop="50dp"/>
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableStart="@drawable/ic_email_buyer"
+                android:drawablePadding="10dp"
+                android:hint="Email"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/black" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="20dp"
+                android:drawableStart="@drawable/ic_pass_buyer"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+                android:textColorHint="@color/white" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/password"
+                android:layout_marginLeft="135dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="135dp"
+                android:backgroundTint="@color/purple"
+                android:text="Login" />
+
+            <TextView
+                android:id="@+id/noreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login"
+                android:layout_marginTop="40dp"
+                android:text="Haven't registered yet?"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/noreg"
+                android:layout_marginLeft="135dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="135dp"
+                android:backgroundTint="@color/purple"
+                android:text="Register" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="300dp"
+                android:layout_height="91dp"
+                android:layout_alignBottom="@+id/tv"
+                android:layout_marginLeft="300dp"
+                android:layout_marginBottom="57dp"
+                app:srcCompat="@drawable/ic_baseline_person_pin_24" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="98dp"
+                android:text="Already registered?"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignTop="@+id/register"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/ic_wave__1" />
+
+        </RelativeLayout>
+
+    </ScrollView>
 
 </RelativeLayout>
